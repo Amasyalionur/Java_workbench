@@ -44,8 +44,13 @@ public class Bestellung {
         System.out.println("-------------------------------");
         System.out.println("Möchten Sie ein Getränk dazu bestellen? (j/n)");
        flag = System.console().readLine("(j/n)? :");
-
-
+        System.out.println(flag);
         
+        if (flag.equals("j")) {
+            System.out.println("Kunde möchte Getränk");
+        } else {
+            System.out.println("Kunde möchte kein Getränk");
+        }
+
     }
 }
